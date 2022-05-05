@@ -12,10 +12,13 @@ struct ContentView: View {
         ZStack {
             BackgroundView()
             ScrollView {
-                VStack {
+                VStack(alignment: .leading, spacing: 24) {
                     HeaderView()
+                    Divider()
+                        .background(Color("BodyColor"))
+                    ThemeSwitcherView()
                 }
-                .padding()
+                .padding(24)
             }
         }
     }
