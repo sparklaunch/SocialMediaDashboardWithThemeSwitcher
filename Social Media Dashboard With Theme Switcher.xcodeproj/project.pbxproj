@@ -13,6 +13,7 @@
 		90EB23CF28248E3C0093FA5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23BD28248E3A0093FA5F /* ContentView.swift */; };
 		90EB23D028248E3C0093FA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90EB23BE28248E3C0093FA5F /* Assets.xcassets */; };
 		90EB23D128248E3C0093FA5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90EB23BE28248E3C0093FA5F /* Assets.xcassets */; };
+		90EB23DE282490920093FA5F /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23DD282490920093FA5F /* Dashboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		90EB23C328248E3C0093FA5F /* Social Media Dashboard With Theme Switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Media Dashboard With Theme Switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EB23C928248E3C0093FA5F /* Social Media Dashboard With Theme Switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Media Dashboard With Theme Switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EB23CB28248E3C0093FA5F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		90EB23DD282490920093FA5F /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		90EB23DC28248E610093FA5F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				90EB23DD282490920093FA5F /* Dashboard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90EB23CE28248E3C0093FA5F /* ContentView.swift in Sources */,
+				90EB23DE282490920093FA5F /* Dashboard.swift in Sources */,
 				90EB23CC28248E3C0093FA5F /* SocialMediaDashboardWithThemeSwitcherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
