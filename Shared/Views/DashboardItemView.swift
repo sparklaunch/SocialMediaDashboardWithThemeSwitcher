@@ -16,7 +16,20 @@ struct DashboardItemView: View {
             } else {
                 DashboardBackgroundGradientView(gradient: item.socialMedia.linearGradient!)
             }
+            VStack {
+                HStack {
+                    item.socialMedia.logo
+                        .resizable()
+                        .scaledToFit()
+                    Text(item.accountName)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color("BodyColor"))
+                }
+                .frame(height: 30)
+            }
+            .padding(36)
         }
+        .fixedSize(horizontal: false, vertical: true)
     }
 }
 

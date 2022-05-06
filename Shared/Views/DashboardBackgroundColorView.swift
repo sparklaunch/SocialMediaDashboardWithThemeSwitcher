@@ -13,10 +13,9 @@ struct DashboardBackgroundColorView: View {
         ZStack(alignment: .top) {
             Color("CardColor")
             color
-                .frame(height: 30)
+                .frame(height: 10)
         }
         .cornerRadius(15)
-        .fixedSize(horizontal: false, vertical: true)
     }
 }
 
