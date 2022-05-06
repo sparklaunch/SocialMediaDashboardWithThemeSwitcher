@@ -108,6 +108,6 @@ class Dashboard: ObservableObject {
         .init(accountName: "@nathanf", socialMedia: .facebook, numberOfFollowers: 1987, comparedToPrevious: 12),
         .init(accountName: "@nathanf", socialMedia: .twitter, numberOfFollowers: 1044, comparedToPrevious: 99),
         .init(accountName: "@realnathanf", socialMedia: .instagram, numberOfFollowers: 11000, comparedToPrevious: 1099),
-        .init(accountName: "Nathan F.", socialMedia: .youtube, numberOfFollowers: 8239, comparedToPrevious: 144)
+        .init(accountName: "Nathan F.", socialMedia: .youtube, numberOfFollowers: 8239, comparedToPrevious: -144)
     ]
 }

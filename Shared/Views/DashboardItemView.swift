@@ -16,9 +16,12 @@ struct DashboardItemView: View {
             } else {
                 DashboardBackgroundGradientView(gradient: item.socialMedia.linearGradient!)
             }
-            VStack {
-                DashboardHeaderView(logo: item.socialMedia.logo, accountName: item.accountName)
-                DashboardFollowersView(title: item.numberOfFollowersString, unit: item.socialMedia.followerTerm.rawValue)
+            VStack(spacing: 24) {
+                VStack {
+                    DashboardHeaderView(logo: item.socialMedia.logo, accountName: item.accountName)
+                    DashboardFollowersView(title: item.numberOfFollowersString, unit: item.socialMedia.followerTerm.rawValue)
+                }
+                DashboardComparisonView(value: item.comparedToPrevious)
             }
             .padding(36)
         }

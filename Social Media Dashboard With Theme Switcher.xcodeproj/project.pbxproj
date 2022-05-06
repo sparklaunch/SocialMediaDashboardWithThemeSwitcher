@@ -22,6 +22,7 @@
 		90EB23EA28249F460093FA5F /* DashboardBackgroundGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23E928249F460093FA5F /* DashboardBackgroundGradientView.swift */; };
 		90EB23EC2824A4860093FA5F /* DashboardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23EB2824A4860093FA5F /* DashboardHeaderView.swift */; };
 		90EB23EE2824A4FD0093FA5F /* DashboardFollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23ED2824A4FD0093FA5F /* DashboardFollowersView.swift */; };
+		90EB23F02824A5CD0093FA5F /* DashboardComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23EF2824A5CD0093FA5F /* DashboardComparisonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		90EB23E928249F460093FA5F /* DashboardBackgroundGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardBackgroundGradientView.swift; sourceTree = "<group>"; };
 		90EB23EB2824A4860093FA5F /* DashboardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardHeaderView.swift; sourceTree = "<group>"; };
 		90EB23ED2824A4FD0093FA5F /* DashboardFollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFollowersView.swift; sourceTree = "<group>"; };
+		90EB23EF2824A5CD0093FA5F /* DashboardComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardComparisonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				90EB23E928249F460093FA5F /* DashboardBackgroundGradientView.swift */,
 				90EB23EB2824A4860093FA5F /* DashboardHeaderView.swift */,
 				90EB23ED2824A4FD0093FA5F /* DashboardFollowersView.swift */,
+				90EB23EF2824A5CD0093FA5F /* DashboardComparisonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				90EB23EC2824A4860093FA5F /* DashboardHeaderView.swift in Sources */,
 				90EB23E828249DBD0093FA5F /* DashboardBackgroundColorView.swift in Sources */,
+				90EB23F02824A5CD0093FA5F /* DashboardComparisonView.swift in Sources */,
 				90EB23E228249B6D0093FA5F /* HeaderView.swift in Sources */,
 				90EB23E428249C150093FA5F /* ThemeSwitcherView.swift in Sources */,
 				90EB23CE28248E3C0093FA5F /* ContentView.swift in Sources */,
