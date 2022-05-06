@@ -16,6 +16,9 @@ struct SocialMedia: Identifiable {
     let followerTerm: FollowerTerm
     var color: Color?
     var linearGradient: LinearGradient?
+    var hasColor: Bool {
+        color != nil
+    }
     static func from(_ socialMediaType: SocialMediaType) -> Self {
         return socialMediaMapper[socialMediaType]!
     }
@@ -52,6 +55,15 @@ struct DashboardItem: Identifiable {
         self.socialMedia = SocialMedia.from(socialMedia)
         self.numberOfFollowers = numberOfFollowers
         self.comparedToPrevious = comparedToPrevious
+    }
+}
+
+extension DashboardItem {
+    init() {
+        self.accountName = "@nathanf"
+        self.socialMedia = SocialMedia.from(.facebook)
+        self.numberOfFollowers = 1987
+        self.comparedToPrevious = 12
     }
 }
 

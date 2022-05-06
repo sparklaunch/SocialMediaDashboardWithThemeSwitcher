@@ -16,7 +16,7 @@ struct ThemeSwitcherView: View {
                 .foregroundColor(Color("BodyColor"))
             Spacer()
             Toggle(isOn: .constant(false)) {
-
+                
             }
         }
     }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var dashboard: Dashboard = .init()
     var body: some View {
         ZStack {
             BackgroundView()
@@ -17,10 +18,14 @@ struct ContentView: View {
                     Divider()
                         .background(Color("BodyColor"))
                     ThemeSwitcherView()
+                    ForEach(dashboard.items) { item in
+                        DashboardItemView(item: item)
+                    }
                 }
                 .padding(24)
             }
         }
+        .environmentObject(dashboard)
     }
 }
 
