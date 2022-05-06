@@ -50,6 +50,14 @@ struct DashboardItem: Identifiable {
     let socialMedia: SocialMedia
     let numberOfFollowers: Int
     let comparedToPrevious: Int
+    var numberOfFollowersString: String {
+        if numberOfFollowers >= 10000 {
+            return String(String(numberOfFollowers).prefix(2)) + "k"
+        }
+        else {
+            return String(numberOfFollowers)
+        }
+    }
     init(accountName: String, socialMedia: SocialMediaType, numberOfFollowers: Int, comparedToPrevious: Int) {
         self.accountName = accountName
         self.socialMedia = SocialMedia.from(socialMedia)

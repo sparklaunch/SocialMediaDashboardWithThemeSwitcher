@@ -17,15 +17,8 @@ struct DashboardItemView: View {
                 DashboardBackgroundGradientView(gradient: item.socialMedia.linearGradient!)
             }
             VStack {
-                HStack {
-                    item.socialMedia.logo
-                        .resizable()
-                        .scaledToFit()
-                    Text(item.accountName)
-                        .fontWeight(.semibold)
-                        .foregroundColor(Color("BodyColor"))
-                }
-                .frame(height: 30)
+                DashboardHeaderView(logo: item.socialMedia.logo, accountName: item.accountName)
+                DashboardFollowersView(title: item.numberOfFollowersString, unit: item.socialMedia.followerTerm.rawValue)
             }
             .padding(36)
         }
