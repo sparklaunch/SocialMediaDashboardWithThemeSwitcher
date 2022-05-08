@@ -23,6 +23,7 @@
 		90EB23EC2824A4860093FA5F /* DashboardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23EB2824A4860093FA5F /* DashboardHeaderView.swift */; };
 		90EB23EE2824A4FD0093FA5F /* DashboardFollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23ED2824A4FD0093FA5F /* DashboardFollowersView.swift */; };
 		90EB23F02824A5CD0093FA5F /* DashboardComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23EF2824A5CD0093FA5F /* DashboardComparisonView.swift */; };
+		90EB23F228277F960093FA5F /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23F128277F960093FA5F /* Overview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		90EB23EB2824A4860093FA5F /* DashboardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardHeaderView.swift; sourceTree = "<group>"; };
 		90EB23ED2824A4FD0093FA5F /* DashboardFollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFollowersView.swift; sourceTree = "<group>"; };
 		90EB23EF2824A5CD0093FA5F /* DashboardComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardComparisonView.swift; sourceTree = "<group>"; };
+		90EB23F128277F960093FA5F /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				90EB23DD282490920093FA5F /* Dashboard.swift */,
+				90EB23F128277F960093FA5F /* Overview.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				90EB23E228249B6D0093FA5F /* HeaderView.swift in Sources */,
 				90EB23E428249C150093FA5F /* ThemeSwitcherView.swift in Sources */,
 				90EB23CE28248E3C0093FA5F /* ContentView.swift in Sources */,
+				90EB23F228277F960093FA5F /* Overview.swift in Sources */,
 				90EB23DE282490920093FA5F /* Dashboard.swift in Sources */,
 				90EB23E028249B2F0093FA5F /* BackgroundView.swift in Sources */,
 				90EB23EE2824A4FD0093FA5F /* DashboardFollowersView.swift in Sources */,
