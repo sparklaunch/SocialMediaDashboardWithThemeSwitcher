@@ -24,12 +24,13 @@ struct ContentView: View {
                             DashboardItemView(item: item)
                         }
                     }
-                    VStack {
+                    VStack(alignment: .leading, spacing: 16) {
                         OverviewHeaderView()
                         ForEach(overview.items) { item in
                             OverviewItemView(item: item)
                         }
                     }
+                    .padding(.vertical, 24)
                 }
                 .padding(24)
             }
