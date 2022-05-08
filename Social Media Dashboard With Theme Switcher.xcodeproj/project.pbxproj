@@ -118,18 +118,10 @@
 		90EB23DB28248E5B0093FA5F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				90EB23FB28279CD70093FA5F /* Misc */,
+				90EB23FA28279CC90093FA5F /* Overview */,
+				90EB23F928279CB60093FA5F /* Dashboard */,
 				90EB23BD28248E3A0093FA5F /* ContentView.swift */,
-				90EB23DF28249B2F0093FA5F /* BackgroundView.swift */,
-				90EB23E128249B6D0093FA5F /* HeaderView.swift */,
-				90EB23E328249C150093FA5F /* ThemeSwitcherView.swift */,
-				90EB23E528249CF90093FA5F /* DashboardItemView.swift */,
-				90EB23E728249DBD0093FA5F /* DashboardBackgroundColorView.swift */,
-				90EB23E928249F460093FA5F /* DashboardBackgroundGradientView.swift */,
-				90EB23EB2824A4860093FA5F /* DashboardHeaderView.swift */,
-				90EB23ED2824A4FD0093FA5F /* DashboardFollowersView.swift */,
-				90EB23EF2824A5CD0093FA5F /* DashboardComparisonView.swift */,
-				90EB23F3282783B10093FA5F /* OverviewHeaderView.swift */,
-				90EB23F5282784170093FA5F /* OverviewItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +134,38 @@
 				90EB23F728279A950093FA5F /* GlobalState.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		90EB23F928279CB60093FA5F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				90EB23EF2824A5CD0093FA5F /* DashboardComparisonView.swift */,
+				90EB23ED2824A4FD0093FA5F /* DashboardFollowersView.swift */,
+				90EB23EB2824A4860093FA5F /* DashboardHeaderView.swift */,
+				90EB23E928249F460093FA5F /* DashboardBackgroundGradientView.swift */,
+				90EB23E728249DBD0093FA5F /* DashboardBackgroundColorView.swift */,
+				90EB23E528249CF90093FA5F /* DashboardItemView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		90EB23FA28279CC90093FA5F /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				90EB23F5282784170093FA5F /* OverviewItemView.swift */,
+				90EB23F3282783B10093FA5F /* OverviewHeaderView.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		90EB23FB28279CD70093FA5F /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				90EB23DF28249B2F0093FA5F /* BackgroundView.swift */,
+				90EB23E128249B6D0093FA5F /* HeaderView.swift */,
+				90EB23E328249C150093FA5F /* ThemeSwitcherView.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
