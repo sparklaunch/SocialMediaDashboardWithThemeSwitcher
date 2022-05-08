@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ThemeSwitcherView: View {
+    @State private var isDarkMode = false
+    @EnvironmentObject private var globalState: GlobalState
     var body: some View {
         HStack {
             Text("Dark Mode")
@@ -15,8 +17,12 @@ struct ThemeSwitcherView: View {
                 .fontWeight(.semibold)
                 .foregroundColor(Color("BodyColor"))
             Spacer()
-            Toggle(isOn: .constant(false)) {
-                
+            Toggle(isOn: $isDarkMode) {
+            }
+            .onChange(of: isDarkMode) { isDarkMode in
+                withAnimation(.default) {
+                    globalState.colorScheme = isDarkMode ? .dark : .light
+                }
             }
         }
     }
@@ -27,5 +33,6 @@ struct ThemeSwitcherView_Previews: PreviewProvider {
         ThemeSwitcherView()
             .padding()
             .previewLayout(.sizeThatFits)
+            .environmentObject(GlobalState())
     }
 }

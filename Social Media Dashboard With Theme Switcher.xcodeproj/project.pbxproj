@@ -26,6 +26,7 @@
 		90EB23F228277F960093FA5F /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23F128277F960093FA5F /* Overview.swift */; };
 		90EB23F4282783B10093FA5F /* OverviewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23F3282783B10093FA5F /* OverviewHeaderView.swift */; };
 		90EB23F6282784170093FA5F /* OverviewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23F5282784170093FA5F /* OverviewItemView.swift */; };
+		90EB23F828279A950093FA5F /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EB23F728279A950093FA5F /* GlobalState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		90EB23F128277F960093FA5F /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
 		90EB23F3282783B10093FA5F /* OverviewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewHeaderView.swift; sourceTree = "<group>"; };
 		90EB23F5282784170093FA5F /* OverviewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewItemView.swift; sourceTree = "<group>"; };
+		90EB23F728279A950093FA5F /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				90EB23DD282490920093FA5F /* Dashboard.swift */,
 				90EB23F128277F960093FA5F /* Overview.swift */,
+				90EB23F728279A950093FA5F /* GlobalState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90EB23F828279A950093FA5F /* GlobalState.swift in Sources */,
 				90EB23EC2824A4860093FA5F /* DashboardHeaderView.swift in Sources */,
 				90EB23E828249DBD0093FA5F /* DashboardBackgroundColorView.swift in Sources */,
 				90EB23F02824A5CD0093FA5F /* DashboardComparisonView.swift in Sources */,

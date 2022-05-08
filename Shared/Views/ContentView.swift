@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @StateObject private var dashboard: Dashboard = .init()
     @StateObject private var overview: Overview = .init()
+    @StateObject private var globalState: GlobalState = .init()
     var body: some View {
         ZStack {
             BackgroundView()
@@ -35,8 +36,10 @@ struct ContentView: View {
                 .padding(24)
             }
         }
+        .colorScheme(globalState.colorScheme)
         .environmentObject(dashboard)
         .environmentObject(overview)
+        .environmentObject(globalState)
     }
 }
 
