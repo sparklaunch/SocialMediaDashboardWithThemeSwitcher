@@ -9,23 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var dashboard: Dashboard = .init()
+    @StateObject private var overview: Overview = .init()
     var body: some View {
         ZStack {
             BackgroundView()
             ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
-                    HeaderView()
-                    Divider()
-                        .background(Color("BodyColor"))
-                    ThemeSwitcherView()
-                    ForEach(dashboard.items) { item in
-                        DashboardItemView(item: item)
+                VStack {
+                    VStack(alignment: .leading, spacing: 24) {
+                        HeaderView()
+                        Divider()
+                            .background(Color("BodyColor"))
+                        ThemeSwitcherView()
+                        ForEach(dashboard.items) { item in
+                            DashboardItemView(item: item)
+                        }
+                    }
+                    VStack {
+                        OverviewHeaderView()
+                        ForEach(overview.items) { item in
+                            OverviewItemView(item: item)
+                        }
                     }
                 }
                 .padding(24)
             }
         }
         .environmentObject(dashboard)
+        .environmentObject(overview)
     }
 }
 
